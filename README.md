@@ -44,3 +44,20 @@ Proje, iki aşamalı güçlü bir Bilgi Alma Artırımlı Üretim (RAG) mimarisi
 ## 🚀 Kurulum ve Proje Yapısı
 
 ### Proje Yapısı
+## 🌐 Web Arayüzü ve Ürün Kılavuzu
+
+Proje, kullanıcı dostu bir Streamlit arayüzü ile sunulmaktadır.
+
+### Ürün Özellikleri:
+
+* **Canlı Sohbet Arayüzü:** Kullanıcıların sorularını girmesi ve cevapları görmesi için modern bir Chatbot penceresi sunar.
+* **Lokal Vektörleme Bildirimi:** Uygulama başlatılırken, verilerin lokal olarak işlendiği bilgisi ekranda gösterilerek şeffaflık sağlanır.
+* **Otomatik Yükleme:** `masallar/` klasörüne yeni bir masal dosyası eklendiğinde, uygulama yeniden başlatıldığında otomatik olarak öğrenme sürecine dahil edilir.
+* **Veri Seti Bilgisi:** Arayüz, kaç adet metin parçasının (chunks) işlendiğini göstererek kullanıcının bilgi kaynağının büyüklüğünü anlamasını sağlar.
+
+### Kullanım Kılavuzu:
+
+1.  Uygulama başlatıldığında, öncelikle tüm masal metinleri yüklenir ve vektörlenir (İlk çalıştırmada bu biraz zaman alabilir).
+2.  İşlem tamamlandığında sohbet kutusu aktif hale gelir.
+3.  **Soru Sorun:** "Kırmızı Başlıklı Kız'ın sepetinde ne vardı?" veya "Pinokyo'nun babasının adı nedir?" gibi, yüklediğiniz masallarla ilgili bir soru yazın ve Enter tuşuna basın.
+4.  LLM (Gemini-Flash), ilgili masal parçalarını kullanarak size kanıta dayalı bir cevap sunacaktır.
