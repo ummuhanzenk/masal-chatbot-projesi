@@ -54,3 +54,57 @@ Bu proje, Python'ın sanal ortamı olan Conda kullanılarak izole bir ortamda ç
 ### 2. Proje Dosyaları ve Yapısı
 
 Projenin anlaşılırlığını artırmak için aşağıdaki temel dizin yapısı kullanılır:
+### 3. Ortam Kurulum Adımları
+
+Projenizi yerel bilgisayarınızda (Windows, Mac, Linux) çalıştırmak için aşağıdaki adımları sırasıyla uygulayın.
+
+1.  **Depoyu Klonlama:**
+    ```bash
+    git clone [https://github.com/ummuhanzenk/masal-chatbot-projesi.git](https://github.com/ummuhanzenk/masal-chatbot-projesi.git)
+    cd masal-chatbot-projesi
+    ```
+
+2.  **Conda Ortamı Oluşturma ve Aktifleştirme:**
+    ```bash
+    conda create -n masal-conda python=3.10 -y
+    conda activate masal-conda
+    ```
+
+3.  **Bağımlılıkları Yükleme:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4.  **API Anahtarını Yapılandırma:**
+    * Proje klasörünün içinde **`.env`** adında bir dosya oluşturun.
+    * Dosyanın içine kendi Gemini API anahtarınızı ekleyin (Örnek satır):
+        ```env
+        # .env dosyası içeriği:
+        GOOGLE_API_KEY="SİZİN_API_ANAHTARINIZ"
+        ```
+
+5.  **Uygulamayı Başlatma:**
+    ```bash
+    python -m streamlit run project.py
+    ```
+    *Uygulama, yerel tarayıcınızda otomatik olarak açılacaktır. İlk çalıştırmada lokal embedding modelini indirir.*
+
+---
+
+## 🌐 Web Arayüzü ve Ürün Kılavuzu
+
+Proje, kullanıcı dostu bir Streamlit arayüzü ile sunulmaktadır.
+
+### Ürün Özellikleri:
+
+* **Canlı Sohbet Arayüzü:** Kullanıcıların sorularını girmesi ve cevapları görmesi için modern bir Chatbot penceresi sunar.
+* **Lokal Vektörleme Bildirimi:** Uygulama başlatılırken, verilerin lokal olarak işlendiği bilgisi ekranda gösterilerek şeffaflık sağlanır.
+* **Otomatik Yükleme:** `masallar/` klasörüne yeni bir masal dosyası eklendiğinde, uygulama yeniden başlatıldığında otomatik olarak öğrenme sürecine dahil edilir.
+* **Veri Seti Bilgisi:** Arayüz, kaç adet metin parçasının (chunks) işlendiğini göstererek kullanıcının bilgi kaynağının büyüklüğünü anlamasını sağlar.
+
+### Kullanım Kılavuzu:
+
+1.  Uygulama başlatıldığında, öncelikle tüm masal metinleri yüklenir ve vektörlenir (İlk çalıştırmada bu biraz zaman alabilir).
+2.  İşlem tamamlandığında sohbet kutusu aktif hale gelir.
+3.  **Soru Sorun:** "Kırmızı Başlıklı Kız'ın sepetinde ne vardı?" gibi, yüklediğiniz masallarla ilgili bir soru yazın ve Enter tuşuna basın.
+4.  LLM (Gemini-Flash), ilgili masal parçalarını kullanarak size kanıta dayalı bir cevap sunacaktır.
