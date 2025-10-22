@@ -59,8 +59,8 @@ def setup_rag_pipeline():
     texts = text_splitter.split_documents(documents)
     
     # 2. LOKAL Vektörleme (Embedding) - ARTIK API KOTASINI AŞMAYACAK!
-    embedding_model = SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2")
-    
+from langchain_google_genai import GoogleGenAIEmbeddings
+embeddings = GoogleGenAIEmbeddings(model="models/embedding-001")    
     # 3. Vektör Veritabanı
     vectorstore = DocArrayInMemorySearch.from_documents(texts, embedding_model)
     
