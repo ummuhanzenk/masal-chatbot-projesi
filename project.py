@@ -9,7 +9,7 @@ import streamlit as st
 # Lokal Embedding Modeli için kütüphane (API limitini aşar)
 
 # Diğer LangChain Bileşenleri
-from langchain.chat_models import ChatGoogleGenerativeAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.embeddings import GoogleGenAIEmbeddings
 from langchain.document_loaders import TextLoader 
 from langchain_community.document_loaders import PyPDFLoader 
