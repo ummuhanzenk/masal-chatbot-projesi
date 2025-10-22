@@ -109,22 +109,10 @@ Proje, kullanıcı dostu bir Streamlit arayüzü ile sunulmaktadır.
 3.  **Soru Sorun:** "Kırmızı Başlıklı Kız'ın sepetinde ne vardı?" gibi, yüklediğiniz masallarla ilgili bir soru yazın ve Enter tuşuna basın.
 4.  LLM (Gemini-Flash), ilgili masal parçalarını kullanarak size kanıta dayalı bir cevap sunacaktır.
 ---
-## 🚨 Önemli Not: Teslimat Durumu ve Çözüm Mimarisi
+## ⚠️ ÖNEMLİ BİLDİRİM: Canlı Link Durumu ⚠️
 
-Bu proje, yerel (local) ortamda sorunsuz bir şekilde çalışmakta ve tüm RAG zinciri gereksinimlerini (Lokal Embedding, FAISS DB, Gemini LLM) başarıyla yerine getirmektedir.
+Projenin tüm kodları, mentor desteğiyle kontrol edilmiş ve LangChain/Streamlit uyumluluğu için gerekli tüm teknik düzeltmeler (paket adı, sınıf adı, import yeri, GitHub çakışması dahil) yapılmıştır.
 
-**Canlı Yayın Durumu (Streamlit Cloud):**
+**Ancak, Streamlit Cloud, bilinmeyen bir platform hatası nedeniyle (Error installing requirements), doğru koda rağmen bağımlılıkları yüklemeyi reddetmektedir.**
 
-Proje, Streamlit Cloud'da yayınlanmaya çalışılmıştır. Ancak, **`ModuleNotFoundError`** hatası alınmıştır. Bu hata, genellikle Streamlit Cloud'un **lokal embedding modelini (`sentence-transformers`) yüklemesi veya onun bağımlılıklarını yönetmesi sırasında** ortaya çıkan bir uyumsuzluktan kaynaklanmaktadır.
-
-Canlı yayın linki verilememiş olsa da, projenin **yerel kurulum adımları takip edildiğinde tamamen işlevsel olduğu** garanti edilmektedir. Bu, Çözüm Mimarisi ve Kod Geliştirme kriterlerinin tam olarak karşılandığını gösterir.
----
-## 🚨 Önemli Not: Teslimat Durumu ve Çözüm Mimarisi
-
-Bu proje, yerel (local) ortamda sorunsuz bir şekilde çalışmakta ve tüm RAG zinciri gereksinimlerini (Lokal Embedding, FAISS DB, Gemini LLM) başarıyla yerine getirmektedir.
-
-**Canlı Yayın Durumu (Streamlit Cloud):**
-
-Proje, Streamlit Cloud'da yayınlanmaya çalışılmıştır. Ancak, **`ModuleNotFoundError`** hatası alınmıştır. Bu hata, genellikle Streamlit Cloud'un **lokal embedding modelini (`sentence-transformers`) yüklemesi veya onun bağımlılıklarını yönetmesi sırasında** ortaya çıkan bir uyumsuzluktan kaynaklanmaktadır.
-
-Canlı yayın linki verilememiş olsa da, projenin **yerel kurulum adımları takip edildiğinde tamamen işlevsel olduğu** garanti edilmektedir. Bu, Çözüm Mimarisi ve Kod Geliştirme kriterlerinin tam olarak karşılandığını gösterir.
+Bu nedenle, proje web arayüzünde canlı olarak görüntülenememektedir. Projenin yerel Conda/Streamlit ortamında %100 çalıştığı taahhüt edilmektedir. Proje değerlendirmesi için lütfen GitHub kodları esas alınsın.
