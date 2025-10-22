@@ -1,2 +1,5 @@
 [server]
 enableCORS = false
+[general]
+# Streamlit Cloud'a daha uyumlu bir Python versiyonunu kullanmasini soyle
+pythonVersion = 3.9
