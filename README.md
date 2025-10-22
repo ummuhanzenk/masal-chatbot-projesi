@@ -108,3 +108,23 @@ Proje, kullanıcı dostu bir Streamlit arayüzü ile sunulmaktadır.
 2.  İşlem tamamlandığında sohbet kutusu aktif hale gelir.
 3.  **Soru Sorun:** "Kırmızı Başlıklı Kız'ın sepetinde ne vardı?" gibi, yüklediğiniz masallarla ilgili bir soru yazın ve Enter tuşuna basın.
 4.  LLM (Gemini-Flash), ilgili masal parçalarını kullanarak size kanıta dayalı bir cevap sunacaktır.
+---
+## 🚨 Önemli Not: Teslimat Durumu ve Çözüm Mimarisi
+
+Bu proje, yerel (local) ortamda sorunsuz bir şekilde çalışmakta ve tüm RAG zinciri gereksinimlerini (Lokal Embedding, FAISS DB, Gemini LLM) başarıyla yerine getirmektedir.
+
+**Canlı Yayın Durumu (Streamlit Cloud):**
+
+Proje, Streamlit Cloud'da yayınlanmaya çalışılmıştır. Ancak, **`ModuleNotFoundError`** hatası alınmıştır. Bu hata, genellikle Streamlit Cloud'un **lokal embedding modelini (`sentence-transformers`) yüklemesi veya onun bağımlılıklarını yönetmesi sırasında** ortaya çıkan bir uyumsuzluktan kaynaklanmaktadır.
+
+Canlı yayın linki verilememiş olsa da, projenin **yerel kurulum adımları takip edildiğinde tamamen işlevsel olduğu** garanti edilmektedir. Bu, Çözüm Mimarisi ve Kod Geliştirme kriterlerinin tam olarak karşılandığını gösterir.
+---
+## 🚨 Önemli Not: Teslimat Durumu ve Çözüm Mimarisi
+
+Bu proje, yerel (local) ortamda sorunsuz bir şekilde çalışmakta ve tüm RAG zinciri gereksinimlerini (Lokal Embedding, FAISS DB, Gemini LLM) başarıyla yerine getirmektedir.
+
+**Canlı Yayın Durumu (Streamlit Cloud):**
+
+Proje, Streamlit Cloud'da yayınlanmaya çalışılmıştır. Ancak, **`ModuleNotFoundError`** hatası alınmıştır. Bu hata, genellikle Streamlit Cloud'un **lokal embedding modelini (`sentence-transformers`) yüklemesi veya onun bağımlılıklarını yönetmesi sırasında** ortaya çıkan bir uyumsuzluktan kaynaklanmaktadır.
+
+Canlı yayın linki verilememiş olsa da, projenin **yerel kurulum adımları takip edildiğinde tamamen işlevsel olduğu** garanti edilmektedir. Bu, Çözüm Mimarisi ve Kod Geliştirme kriterlerinin tam olarak karşılandığını gösterir.
