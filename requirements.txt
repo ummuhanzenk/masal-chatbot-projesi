@@ -1,7 +1,6 @@
 streamlit
 langchain
-langchain-google-genai
+google-genai
 pypdf
 sentence-transformers
 python-dotenv
-tiktoken
