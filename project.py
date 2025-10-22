@@ -6,9 +6,7 @@ import glob
 from dotenv import load_dotenv 
 import streamlit as st
 
-# Lokal Embedding Modeli için kütüphane (API limitini aşar)
-
-# GÜNCEL VE UYUMLU IMPORT SATIRLARI (MENTOR ONAYLI YOL)
+# LangChain Gerekli Bileşenleri
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_google_genai import GoogleGenAIEmbeddings
 from langchain.document_loaders import TextLoader
@@ -16,6 +14,8 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import DocArrayInMemorySearch
 from langchain.chains import RetrievalQA
+from langchain.prompts import PromptTemplate
+from langchain.chains.question_answering import load_qa_chain
 
 # .env dosyasındaki GOOGLE_API_KEY'i yükle
 load_dotenv() 
