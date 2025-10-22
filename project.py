@@ -8,11 +8,11 @@ import streamlit as st
 
 # Lokal Embedding Modeli için kütüphane (API limitini aşar)
 
-# Diğer LangChain Bileşenleri
-from langchain.llms import GoogleGenerativeAI
-from langchain.embeddings import GoogleGenAIEmbeddings
-from langchain.document_loaders import TextLoader 
-from langchain_community.document_loaders import PyPDFLoader 
+# GÜNCEL VE UYUMLU IMPORT SATIRLARI (MENTOR ONAYLI YOL)
+from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_google_genai import GoogleGenAIEmbeddings
+from langchain.document_loaders import TextLoader
+from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import DocArrayInMemorySearch
 from langchain.chains import RetrievalQA
