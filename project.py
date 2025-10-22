@@ -7,7 +7,6 @@ from dotenv import load_dotenv
 import streamlit as st
 
 # Lokal Embedding Modeli için kütüphane (API limitini aşar)
-from langchain_community.embeddings import SentenceTransformerEmbeddings 
 
 # Diğer LangChain Bileşenleri
 from langchain_google_genai import ChatGoogleGenerativeAI
